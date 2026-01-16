@@ -1,0 +1,92 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    position: absolute;
+    font-size: 20px;
+    padding: 100px;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* Main card */
+.city {
+    background: #ffffff;
+    width: 320px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Title */
+.city h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Input field */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, all 0.2s ease;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.03);
+}
+
+/* Result display */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+    min-height: 40px;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
